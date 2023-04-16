@@ -1,0 +1,23 @@
+.imagemLogin {
+    background-image: url('https://i.imgur.com/c2Szk3h.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .linkLogin {
+    text-decoration: underline;
+    color: var(--blue-600)
+  }
+  
+  .linkLogin:hover {
+    color: var(--blue-900)
+  }
+  
+  .botaolegal {
+    background-color: #f60 !important;
+  }
+  
+  .botaolegal:hover {
+    background-color: rgb(139, 57, 2) !important;
+  }
