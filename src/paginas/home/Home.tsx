@@ -1,4 +1,5 @@
 import React from 'react';
+import Duke from './../../assets/Duke.png'
 import { Typography, Grid, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
 import './Home.css'
@@ -11,7 +12,7 @@ function Home() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        style={{ backgroundColor: 'var(--blue-600)' }}
+        style={{ backgroundColor: 'var(--blue-java)' }}
       >
         <Grid alignItems="center" item xs={6}>
           <Box paddingX={20}  >
@@ -33,7 +34,7 @@ function Home() {
               align="center"
               style={{ color: 'white', fontWeight: 'bold' }}
             >
-              expresse aqui os seus pensamentos e opiniões!
+              Compartilhe e aprenda sobre Java!
             </Typography>
           </Box>
           <Box display="flex" justifyContent="center">
@@ -42,7 +43,7 @@ function Home() {
               variant="outlined"
               style={{
                 borderColor: 'white',
-                backgroundColor: 'var(--blue-600)',
+                backgroundColor: 'var(--blue-java)',
                 color: 'white',
               }}
             >
@@ -52,8 +53,8 @@ function Home() {
         </Grid>
         <Grid item xs={6}>
           <img
-            src="https://i.imgur.com/XEmGzkd.png"
-            alt=""
+            src={Duke}
+            alt="Image do Duke auxiliar do Java acenando com as mão e tomando café"
             className='fotoHome'
           />
         </Grid>

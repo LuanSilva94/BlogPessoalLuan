@@ -14,7 +14,7 @@ function Footer() {
         justifyContent="center"
         alignItems="center"
       >
-        <Box display={'flex'} alignItems="center" style={{ backgroundColor: 'var(--blue-900)', height: '120px' }} width={'100%'} justifyContent={'space-around'}>
+        <Box display={'flex'} alignItems="center" style={{ backgroundColor: 'var(--blue-java)', height: '120px' }} width={'100%'} justifyContent={'space-around'}>
           <Box >
             <Box
               paddingTop={1}

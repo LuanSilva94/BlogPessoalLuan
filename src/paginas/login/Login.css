@@ -1,8 +1,8 @@
 .imagemLogin {
-    background-image: url('https://i.imgur.com/c2Szk3h.jpg');
+    background-image: url('./../../assets/java-logo.png.png');
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   
   .linkLogin {
@@ -15,9 +15,9 @@
   }
   
   .botaolegal {
-    background-color: #f60 !important;
+    background-color: #e01f22 !important;
   }
   
   .botaolegal:hover {
-    background-color: rgb(139, 57, 2) !important;
+    background-color: rgb(255, 57, 31) !important;
   }

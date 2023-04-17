@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <>
-      <AppBar position="static" style={{background: 'var(--blue-600)'}}>
+      <AppBar position="static" style={{background: 'var(--blue-java)'}}>
         <Toolbar variant="dense" >
           <Box display={'flex'} justifyContent={'space-between'} width={'100%'} >
             <Box style={{ cursor: 'pointer' }}>
@@ -16,11 +16,14 @@ function Navbar() {
             </Box>
 
             <Box display="flex" justifyContent="start">
+              <Link to='/home'>
               <Box mx={1} style={{ cursor: 'pointer' }}>
                 <Typography variant="h6" color="inherit">
                   home
                 </Typography>
               </Box>
+              </Link>
+              
               <Box mx={1} style={{ cursor: 'pointer' }}>
                 <Typography variant="h6" color="inherit">
                   postagens
@@ -39,7 +42,7 @@ function Navbar() {
               <Box mx={1}>
                 <Link to='/login'>
                   <Typography variant="h6" color="inherit">
-                    logout
+                    login
                   </Typography>
                 </Link>
               </Box>
