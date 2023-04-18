@@ -1,0 +1,19 @@
+.img2 {
+    background-image: url('./../../assets/java-logo.png.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .textos2{
+    font-weight: bold important;
+  }
+
+  .btnCancelar{
+        margin-top: 1.25rem !important;
+        background-color: #e01f22 !important;       
+  }
+
+  .btnCancelar:hover {
+    background-color: rgb(255, 57, 31) !important;
+  }
