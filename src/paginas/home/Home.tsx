@@ -1,7 +1,6 @@
 import React from 'react';
-import Duke from './../../assets/Duke.png'
-import { Typography, Grid, Button } from '@material-ui/core';
-import { Box } from '@mui/material';
+import Duke from './../../assets/Duke.png'  
+import { Box, Typography, Grid, Button } from '@mui/material';
 import './Home.css'
 
 function Home() {
