@@ -3,9 +3,9 @@ import { Typography, Grid, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
 import Duke from './../../assets/Duke.png'
 import './Home.css'
-import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
-import TabPostagens from '../../components/postagens/tabPostagens/TabPostagens';
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import ListaPostagens from '../../components/postagem/listaPostagem/ListaPostagem';
+import TabPostagens from '../../components/postagem/tabPostagem/TabPostagem';
+import ModalPostagem from '../../components/postagem/modalPostagem/ModalPostagem';
 
 function Home() {
   return (

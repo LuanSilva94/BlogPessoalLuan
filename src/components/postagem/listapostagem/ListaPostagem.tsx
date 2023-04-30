@@ -11,7 +11,7 @@ import useLocalStorage from 'react-use-localstorage';
 import { Postagem } from '../../../models/Postagem';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAll } from '../../../services/Service';
-import './ListaPostagens.css'
+import './ListaPostagem.css'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer,';
 

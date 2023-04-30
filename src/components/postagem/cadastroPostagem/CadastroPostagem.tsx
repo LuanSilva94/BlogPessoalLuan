@@ -12,14 +12,14 @@ import {
 } from '@mui/material';
 import './CadastroPostagem.css';
 
-import  Postagem  from '../../../models/Postagem';
+import  {Postagem}  from '../../../models/Postagem';
 import { useNavigate, useParams } from 'react-router-dom';
-import  Tema  from '../../../models/Tema';
+import  {Tema}  from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import { getAll, getId, put, post } from '../../../services/Service';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/store.ts/tokensReducer';
-import Usuario  from '../../../models/Usuario';
+import { TokenState } from '../../../store/tokens/tokensReducer,';
+import {Usuario}  from '../../../models/Usuario';
 
 function CadastroPostagem() {
   const history = useNavigate();
@@ -188,4 +188,3 @@ function CadastroPostagem() {
 }
 
 export default CadastroPostagem;
-Footer

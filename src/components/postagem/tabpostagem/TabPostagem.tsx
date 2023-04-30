@@ -4,9 +4,9 @@ import Tab from '@material-ui/core/Tab';
 import TabContext from '@material-ui/lab/TabContext';
 import TabList from '@material-ui/lab/TabList';
 import TabPanel from '@material-ui/lab/TabPanel';
-import ListaPostagens from '../listaPostagens/ListaPostagens';
-import './TabPostagens.css'
-import Carousel from '../../estaticos/carousel/Carousel';
+import ListaPostagem from '../listaPostagem/ListaPostagem'
+import './TabPostagem.css'
+
 
 function TabPostagens() {
   const [value, setValue] = React.useState('1');
@@ -19,15 +19,12 @@ function TabPostagens() {
     <TabContext value={value}>
         <AppBar position="static" className='barrinha'>
           <TabList centered indicatorColor='primary' onChange={handleChange}  aria-label="simple tabs example">
-            <Tab  label="Postagens" value="1"  />
+            <Tab  label="Postagem" value="1"  />
             <Tab label="Sobre o projeto" value="2" />
           </TabList>
         </AppBar>
         <TabPanel value="1">
-          <ListaPostagens />
-        </TabPanel>
-        <TabPanel value="2">
-          <Carousel />
+          <ListaPostagem />
         </TabPanel>
       </TabContext>
   )
