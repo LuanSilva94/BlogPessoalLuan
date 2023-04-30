@@ -1,7 +1,11 @@
 import React from 'react';
-import Duke from './../../assets/Duke.png'  
-import { Box, Typography, Grid, Button } from '@mui/material';
+import { Typography, Grid, Button } from '@material-ui/core';
+import { Box } from '@mui/material';
+import Duke from './../../assets/Duke.png'
 import './Home.css'
+import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
+import TabPostagens from '../../components/postagens/tabPostagens/TabPostagens';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 function Home() {
   return (
@@ -11,7 +15,7 @@ function Home() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        style={{ backgroundColor: 'var(--blue-java)' }}
+        style={{ backgroundColor: 'var(--blue-600)' }}
       >
         <Grid alignItems="center" item xs={6}>
           <Box paddingX={20}  >
@@ -33,16 +37,18 @@ function Home() {
               align="center"
               style={{ color: 'white', fontWeight: 'bold' }}
             >
-              Compartilhe e aprenda sobre Java!
+              expresse aqui os seus pensamentos e opiniões!
             </Typography>
           </Box>
           <Box display="flex" justifyContent="center">
-            <Box marginRight={1}></Box>
+            <Box marginRight={1}>
+              <ModalPostagem />
+            </Box>
             <Button
               variant="outlined"
               style={{
                 borderColor: 'white',
-                backgroundColor: 'var(--blue-java)',
+                backgroundColor: 'var(--blue-600)',
                 color: 'white',
               }}
             >
@@ -51,13 +57,15 @@ function Home() {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <img
+        <img
             src={Duke}
             alt="Image do Duke auxiliar do Java acenando com as mão e tomando café"
             className='fotoHome'
           />
         </Grid>
-        <Grid xs={12} style={{ backgroundColor: 'white' }}></Grid>
+        <Grid xs={12} style={{ backgroundColor: 'white' }}>
+          <TabPostagens />
+        </Grid>
       </Grid>
     </>
   );
